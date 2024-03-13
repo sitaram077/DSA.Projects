@@ -5,7 +5,8 @@ These games aren't just mindless entertainment; they're testaments to the power 
 
 Current Games:
 
-A formal snake game : A captivating journey through a snake which tends to increase it's size by eating colourful food around the garden. I've used arrays concept in implemnting this 
+A formal snake game : A captivating journey through a snake which tends to increase it's size by eating colourful food around the garden. I've used arrays concept in implemnting this.
+
 Sudoku_solver: This solves the sudoku puzzles.
 
 
@@ -17,10 +18,16 @@ My quest for engineering knowledge continues!  As I explore new algorithms and d
 P.S.  Feel free to check out the resources that fueled my learning journey:
 
 Books:
+
 --> Python Data Structures -by Benjamin Baka
+
 --> Fundementals of Data Structures -by Ellis Horowitz and Sartaj Sahini
+
 --> Official Python documentaton (web)
+
 YouTube Channels:
+
 --> TokyoEdtech.
+
 --> Tech with Tim
 
