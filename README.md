@@ -22,4 +22,5 @@ Books:
 --> Official Python documentaton (web)
 YouTube Channels:
 --> TokyoEdtech.
+--> Tech with Tim
 
