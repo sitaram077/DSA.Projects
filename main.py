@@ -2,18 +2,24 @@ import turtle
 import time
 import random as rd
 
-# firstly lemme create a window for the game
+# declaring the variables
 delay = 0.1
+score = 0
+high_score = 0
+cols = ['red','pink','magenta','mistyrose','paleturquoise3','purple1','plum3','black','brown','grey','yellow','dodgerblue2','goldenrod2']
+col = rd.choice(cols)
+# firstly lemme create a window for the game
+
 window = turtle.Screen()
 window.title("Formal Snake Game")
-window.bgcolor("purple")
+window.bgcolor("lawngreen")
 window.setup(width=600, height=600)
 window.tracer(0) # i've used this function to speed upp the programme
 
 # done with the window, now i can start creating the snake, say lemme start with the head
 snake_head = turtle.Turtle()
 snake_head.shape('circle')
-snake_head.color('white')
+snake_head.color('Orangered')
 snake_head.speed(0)
 snake_head.penup()
 snake_head.goto(0, 0)
@@ -22,12 +28,22 @@ snake_head.direction = "stop"
 # snake's food
 snake_food = turtle.Turtle()
 snake_food.shape('circle')
-snake_food.color('blue')
+snake_food.color(col)
 snake_food.speed(0)
 snake_food.penup()
 snake_food.goto(0,200)
 
 snake_body=[] # this list is created to add segemnts to the snake when snake eats the food
+
+# to display the score i will create a score tab and a highscore tab
+pen = turtle.Turtle()
+pen.speed(0)
+pen.color("black")
+pen.shape("square")
+pen.penup()
+pen.hideturtle()
+pen.goto(0, 260)
+pen.write("Scored : 0 \t\t Highscore : 0", align="center", font=("Verdana", 18, "normal"))
 
 # function declaration part
 def go_up():
@@ -82,14 +98,26 @@ while True:
         x = rd.randint(-290, 290)
         y = rd.randint(-290, 290)
         snake_food.goto(x, y)
-
+        new_col = rd.choice(cols)
+        snake_food.color(new_col)
         # this will  add body to snake
         new_body = turtle.Turtle()
         new_body.speed(0)
-        new_body.shape('circle')
-        new_body.color('grey')
+        new_body.shape('square')
+        new_body.color(new_col)
         new_body.penup()
         snake_body.append(new_body)
+
+        # shorten the delay to adjust the speed
+        delay -= 0.001
+
+        # this will increase the score
+        score += 1
+        if score > high_score:
+            high_score = score
+
+        pen.clear()
+        pen.write("Scored : {} \t\t Highscore : {}".format(score, high_score), align="center", font=("Verdana", 18, "normal"))
 
     # moving the end segments in the reverse order
     for i in range(len(snake_body)-1,0,-1):
@@ -115,6 +143,15 @@ while True:
         # clear the snake body
         snake_body.clear()
 
+        # reset the delay
+        delay = 0.1
+
+        #clear the score
+        score = 0
+        pen.clear()
+        pen.write("Scored : {} \t\t Highscore : {}".format(score, high_score), align="center",
+                  font=("Verdana", 18, "normal"))
+
 
     move()
 
@@ -130,6 +167,15 @@ while True:
                 segment.goto(1000, 1000)
             # clear the snake body
             snake_body.clear()
+
+            # reset the delay
+            delay = 0.1
+
+            # clear the score
+            score = 0
+            pen.clear()
+            pen.write("Scored : {} \t\t Highscore : {}".format(score, high_score), align="center",
+                      font=("Verdana", 18, "normal"))
 
     time.sleep(delay)
 window.mainloop()
