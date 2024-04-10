@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbd02e67-9113-4486-bbbd-33b8c7e6a9aa" name="Changes" comment="minor dir changes">
+    <list default="true" id="cbd02e67-9113-4486-bbbd-33b8c7e6a9aa" name="Changes" comment="sudoku solver code update">
       <change beforePath="$PROJECT_DIR$/../Projects_using_DSA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Projects_using_DSA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projects_using_DSA/Sudoku_solver/sudoku_solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Projects_using_DSA/Sudoku_solver/sudoku_solver.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +36,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -46,14 +48,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "Python.sanke_game.executor": "Run",
+    "Python.sudoku_solver.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sitar\PycharmProjects\Projects_using_DSA\Snake_game" />
@@ -99,13 +103,22 @@
       <option name="project" value="LOCAL" />
       <updated>1710308472736</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="sudoku solver code update">
+      <option name="closed" value="true" />
+      <created>1710310811097</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710310811097</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding the code" />
     <MESSAGE value="scoring and other color grading updates" />
     <MESSAGE value="minor dir changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor dir changes" />
+    <MESSAGE value="sudoku solver code update" />
+    <option name="LAST_COMMIT_MESSAGE" value="sudoku solver code update" />
   </component>
 </project>
