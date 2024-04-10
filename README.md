@@ -39,7 +39,20 @@ Pig is a simple, turn-based dice game for two players. The objective is to be th
 
 **Further Resources**
 
-* You can find various Pig dice game implementations online including: Simple command-line versions, graphical user interfaces (GUI), and web-based versions. 
+* You can find various Pig dice game implementations online including: Simple command-line versions, graphical user interfaces (GUI), and web-based versions.
+
+## STACK PROJECTS
+** Balanced Parentheses Checker:
+* Problem: Determine if a given string contains balanced parentheses (round, square, and curly) using a stack.
+
+** infix to Postfix Notation Converter:
+* Problem: Convert an arithmetic expression in infix notation (e.g., (a + b) * c) to postfix notation (e.g., a b + c *) using a stack for efficient operator handling.
+
+**Undo/Redo Functionality in a Text Editor (Simplified):
+* Problem: Simulate basic undo/redo operations for text editing, illustrating the LIFO (Last In, First Out) nature of a stack.
+
+** Maze Traversal (Depth-First Search):
+* Problem: Explore a maze and find a path from the start to the exit using a depth-first search (DFS) algorithm with a stack.
 
 
 
